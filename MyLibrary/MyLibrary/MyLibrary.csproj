@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-MyLibrary-FCDFC560-51E0-402F-95A3-2A24E9837FD2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\IContext.cs" />
+    <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.cs" />
+    <Compile Remove="Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190115212602_newOne.cs" />
+    <Compile Remove="Data\Migrations\20190115212602_newOne.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190115213433_secondOne.cs" />
+    <Compile Remove="Data\Migrations\20190115213433_secondOne.Designer.cs" />
+    <Compile Remove="Data\Migrations\20190117072002_gfdjj.cs" />
+    <Compile Remove="Data\Migrations\20190117072002_gfdjj.Designer.cs" />
+    <Compile Remove="Data\Migrations\ApplicationDbContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20190117092352_Something.cs" />
+    <Compile Remove="Migrations\20190117092352_Something.Designer.cs" />
+    <Compile Remove="Migrations\20190117152333_SomethingElse.cs" />
+    <Compile Remove="Migrations\20190117152333_SomethingElse.Designer.cs" />
+    <Compile Remove="Migrations\20190117152655_SomethingElse2.cs" />
+    <Compile Remove="Migrations\20190117152655_SomethingElse2.Designer.cs" />
+    <Compile Remove="Migrations\20190117153533_SomethingElse3.cs" />
+    <Compile Remove="Migrations\20190117153533_SomethingElse3.Designer.cs" />
+    <Compile Remove="Migrations\20190117154932_SomethingElse4.cs" />
+    <Compile Remove="Migrations\20190117154932_SomethingElse4.Designer.cs" />
+    <Compile Remove="Migrations\20190117160228_SomethingElse5.cs" />
+    <Compile Remove="Migrations\20190117160228_SomethingElse5.Designer.cs" />
+    <Compile Remove="Migrations\20190117161534_SomethingElse6.cs" />
+    <Compile Remove="Migrations\20190117161534_SomethingElse6.Designer.cs" />
+    <Compile Remove="Migrations\ApplicationDbContextModelSnapshot.cs" />
+    <Compile Remove="Models\AppContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.6" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>

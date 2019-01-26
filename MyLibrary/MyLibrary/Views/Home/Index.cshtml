@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Identity
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Hello, my friend!</h2>
+            <h2>@UserManager.GetUserName(User)</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="~/images/sheep.jpg" alt="ASP.NET" class="img-responsive" />
+        </div>
+    </div>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Hello, stranger! Please login!</h2>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+
+                <img src="~/images/bufnita.png" alt="ASP.NET" class="img-responsive" />
+
+            </div>
+        </div>
+    </div>
+}
+
+
